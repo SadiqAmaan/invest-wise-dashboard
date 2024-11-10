@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Indian Equity Growth Fund", "value": "₹1,254 Cr", "performance": "+12.4%" },
+  { "id": 2, "name": "Indian Debt Fund", "value": "₹892 Cr", "performance": "+8.1%" },
+  { "id": 3, "name": "Indian Balanced Advantage Fund", "value": "₹1,568 Cr", "performance": "+10.7%" },
+  { "id": 4, "name": "Indian IT Sector Fund", "value": "₹789 Cr", "performance": "+18.2%" },
+  { "id": 5, "name": "Indian ESG Fund", "value": "₹923 Cr", "performance": "+9.8%" }
+]

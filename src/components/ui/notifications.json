@@ -1,0 +1,6 @@
+[
+  { "id": 1, "type": "alert", "title": "Nifty 50 Volatility Alert", "message": "Indian Equity Portfolio volatility above 15%", "time": "2 min ago", "unread": true },
+  { "id": 2, "type": "info", "title": "Indian Market Update", "message": "Nifty 50 up 1.2% in pre-market trading", "time": "15 min ago", "unread": true },
+  { "id": 3, "type": "success", "title": "Portfolio Rebalancing Complete", "message": "Conservative Indian Fund successfully rebalanced", "time": "1 hour ago", "unread": false },
+  { "id": 4, "type": "warning", "title": "SEBI Compliance Review", "message": "Monthly SEBI compliance report due tomorrow", "time": "3 hours ago", "unread": false }
+]

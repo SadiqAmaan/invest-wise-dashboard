@@ -1,0 +1,9 @@
+[
+  { "label": "Dashboard", "path": "/dashboard", "icon": "LayoutDashboard" },
+  { "label": "Portfolios", "path": "/portfolio-management", "icon": "Briefcase" },
+  { "label": "Transactions", "path": "/transactions", "icon": "ArrowUpDown" },
+  { "label": "Research", "path": "/research", "icon": "Search" },
+  { "label": "Calendar", "path": "/calendar", "icon": "Calendar" },
+  { "label": "Reports", "path": "/reports-client-communication", "icon": "FileText" },
+  { "label": "Settings", "path": "/settings-administration", "icon": "Settings" }
+]
