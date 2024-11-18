@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Total Portfolio Value",
+    "value": "₹2,84,73,920",
+    "change": 34250,
+    "changePercent": 1.22,
+    "icon": "Wallet",
+    "trend": "TrendingUp"
+  },
+  {
+    "title": "Daily P&L",
+    "value": "₹34,250",
+    "change": 34250,
+    "changePercent": 1.22,
+    "icon": "TrendingUp",
+    "trend": "TrendingUp"
+  },
+  {
+    "title": "Total Return",
+    "value": "18.4%",
+    "change": 2.1,
+    "changePercent": 2.1,
+    "icon": "Target",
+    "trend": "TrendingUp"
+  },
+  {
+    "title": "Cash Available",
+    "value": "₹15,68,900",
+    "change": -12500,
+    "changePercent": -7.4,
+    "icon": "Banknote",
+    "trend": "TrendingDown"
+  }
+]

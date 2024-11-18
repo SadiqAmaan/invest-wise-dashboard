@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Add Transaction",
+    "description": "Record buy/sell orders for Indian stocks",
+    "icon": "Plus",
+    "color": "bg-primary/10 text-primary",
+    "path": "/transactions"
+  },
+  {
+    "id": 2,
+    "title": "Generate Report",
+    "description": "Create performance report with Indian market data",
+    "icon": "FileText",
+    "color": "bg-success/10 text-success",
+    "path": "/reports-client-communication"
+  },
+  {
+    "id": 3,
+    "title": "Rebalance Portfolio",
+    "description": "Optimize asset allocation for Indian portfolios",
+    "icon": "RotateCcw",
+    "color": "bg-warning/10 text-warning",
+    "action": "toast"
+  },
+  {
+    "id": 4,
+    "title": "Risk Analysis",
+    "description": "Run risk assessment based on Indian market conditions",
+    "icon": "Shield",
+    "color": "bg-error/10 text-error",
+    "path": "/analytics-performance"
+  },
+  {
+    "id": 5,
+    "title": "Market Research",
+    "description": "View market insights for Indian stocks",
+    "icon": "TrendingUp",
+    "color": "bg-accent/10 text-accent",
+    "path": "/research"
+  },
+  {
+    "id": 6,
+    "title": "Schedule Meeting",
+    "description": "Plan client review meetings in Indian time zones",
+    "icon": "Calendar",
+    "color": "bg-secondary/10 text-secondary",
+    "path": "/calendar"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "RBI MPC Meeting",
+    "description": "Reserve Bank of India Monetary Policy Committee interest rate decision",
+    "date": "2025-01-15",
+    "time": "2:00 PM IST",
+    "type": "market",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "title": "Client Review - HDFC Pension Fund",
+    "description": "Quarterly performance review meeting",
+    "date": "2025-01-22",
+    "time": "10:00 AM IST",
+    "type": "meeting",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "title": "Earnings Release - TCS",
+    "description": "Tata Consultancy Services Q1 2025 earnings announcement",
+    "date": "2025-01-25",
+    "time": "After Market Close",
+    "type": "earnings",
+    "priority": "high"
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Rebalancing",
+    "description": "Scheduled monthly rebalancing",
+    "date": "2025-01-28",
+    "time": "9:00 AM IST",
+    "type": "task",
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "title": "Risk Committee Meeting",
+    "description": "Monthly risk assessment review",
+    "date": "2025-01-30",
+    "time": "3:00 PM IST",
+    "type": "meeting",
+    "priority": "low"
+  }
+]

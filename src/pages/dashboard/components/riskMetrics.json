@@ -1,0 +1,6 @@
+[
+  { "label": "Beta", "value": "1.12", "description": "Market sensitivity to Nifty 50" },
+  { "label": "Alpha", "value": "3.2%", "description": "Excess return over Nifty 50" },
+  { "label": "Sharpe Ratio", "value": "2.1", "description": "Risk-adjusted return based on Indian market volatility" },
+  { "label": "Max Drawdown", "value": "-12.3%", "description": "Largest peak-to-trough decline during market corrections" }
+]

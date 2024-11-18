@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "RBI Maintains Repo Rate at 6.5% in April MPC Meeting",
+    "summary": "Reserve Bank of India keeps key policy rate unchanged amid stable inflation and growth outlook.",
+    "source": "Economic Times",
+    "time": "2 hours ago",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop",
+    "category": "Monetary Policy"
+  },
+  {
+    "id": 2,
+    "title": "IT Sector Stocks Rally on Strong Q4 Results",
+    "summary": "TCS, Infosys and Wipro report better-than-expected earnings, boosting investor confidence.",
+    "source": "Business Standard",
+    "time": "4 hours ago",
+    "image": "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?w=400&h=200&fit=crop",
+    "category": "Earnings"
+  },
+  {
+    "id": 3,
+    "title": "SEBI Tightens ESG Disclosure Norms for Listed Companies",
+    "summary": "New regulations require enhanced environmental and social reporting for sustainable investing.",
+    "source": "Moneycontrol",
+    "time": "6 hours ago",
+    "image": "https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg?w=400&h=200&fit=crop",
+    "category": "ESG"
+  },
+  {
+    "id": 4,
+    "title": "Nifty 50 Hits All-Time High Amid Foreign Fund Inflows",
+    "summary": "Indian markets outperform global peers with strong FII investment and domestic participation.",
+    "source": "Financial Express",
+    "time": "8 hours ago",
+    "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=200&fit=crop",
+    "category": "Global Markets"
+  },
+  {
+    "id": 5,
+    "title": "Government Proposes New Crypto Taxation Framework",
+    "summary": "Finance Ministry outlines tax structure for digital assets to promote legitimate crypto adoption.",
+    "source": "Mint",
+    "time": "10 hours ago",
+    "image": "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?w=400&h=200&fit=crop",
+    "category": "Regulation"
+  }
+]

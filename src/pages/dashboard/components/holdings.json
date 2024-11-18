@@ -1,0 +1,102 @@
+[
+  {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries Ltd.",
+    "quantity": 1250,
+    "price": 2850.42,
+    "value": 3563025,
+    "change": 25.34,
+    "changePercent": 0.90,
+    "sector": "Energy"
+  },
+  {
+    "symbol": "TCS",
+    "name": "Tata Consultancy Services Ltd.",
+    "quantity": 800,
+    "price": 4125.58,
+    "value": 3300464,
+    "change": -18.50,
+    "changePercent": -0.45,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "INFY",
+    "name": "Infosys Ltd.",
+    "quantity": 450,
+    "price": 1428.70,
+    "value": 642915,
+    "change": 32.10,
+    "changePercent": 2.30,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank Ltd.",
+    "quantity": 320,
+    "price": 1782.50,
+    "value": 570400,
+    "change": -21.50,
+    "changePercent": -1.19,
+    "sector": "Banking"
+  },
+  {
+    "symbol": "ICICIBANK",
+    "name": "ICICI Bank Ltd.",
+    "quantity": 180,
+    "price": 1248.50,
+    "value": 224730,
+    "change": 87.50,
+    "changePercent": 7.55,
+    "sector": "Banking"
+  },
+  {
+    "symbol": "BHARTIARTL",
+    "name": "Bharti Airtel Ltd.",
+    "quantity": 95,
+    "price": 875.30,
+    "value": 83153.5,
+    "change": 12.40,
+    "changePercent": 1.44,
+    "sector": "Telecommunications"
+  },
+  {
+    "symbol": "ITC",
+    "name": "ITC Ltd.",
+    "quantity": 220,
+    "price": 512.78,
+    "value": 112811.6,
+    "change": -5.22,
+    "changePercent": -1.01,
+    "sector": "Consumer Goods"
+  },
+  {
+    "symbol": "LT",
+    "name": "Larsen & Toubro Ltd.",
+    "quantity": 380,
+    "price": 1984.50,
+    "value": 754110,
+    "change": 18.50,
+    "changePercent": 0.94,
+    "sector": "Construction"
+  },
+  {
+    "symbol": "BAJFINANCE",
+    "name": "Bajaj Finance Ltd.",
+    "quantity": 290,
+    "price": 1567.80,
+    "value": 454662,
+    "change": -9.50,
+    "changePercent": -0.60,
+    "sector": "Financial Services"
+  },
+  {
+    "symbol": "MARUTI",
+    "name": "Maruti Suzuki India Ltd.",
+    "quantity": 150,
+    "price": 12893.40,
+    "value": 1934010,
+    "change": 218.00,
+    "changePercent": 1.72,
+    "sector": "Automotive"
+  }
+]
