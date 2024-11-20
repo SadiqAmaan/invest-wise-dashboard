@@ -1,0 +1,18 @@
+[
+  {
+    "question": "I forgot my password. How do I reset it?",
+    "answer": "Click the \"Forgot password?\" link on the login form and follow the email instructions."
+  },
+  {
+    "question": "Why am I being asked for two-factor authentication?",
+    "answer": "MFA is required for Admin and Portfolio Manager accounts to comply with SEBI regulations and ensure maximum security."
+  },
+  {
+    "question": "My account is locked. What should I do?",
+    "answer": "Contact our support team immediately at support@investwise.in or call +91 98765 43210."
+  },
+  {
+    "question": "Can I access the platform from mobile devices?",
+    "answer": "Yes, our platform is fully responsive and optimized for tablets and mobile devices."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Technical Support",
+    "description": "Platform issues and technical assistance",
+    "contact": "support@investwise.in",
+    "phone": "+91 98765 43210",
+    "hours": "24/7 Available",
+    "icon": "Headphones"
+  },
+  {
+    "id": 2,
+    "title": "Account Access",
+    "description": "Login issues and account recovery",
+    "contact": "access@investwise.in",
+    "phone": "+91 98765 43211",
+    "hours": "Mon-Fri 9AM-6PM IST",
+    "icon": "Key"
+  },
+  {
+    "id": 3,
+    "title": "Sales & Demo",
+    "description": "Product information and demonstrations",
+    "contact": "sales@investwise.in",
+    "phone": "+91 98765 43212",
+    "hours": "Mon-Fri 9AM-6PM IST",
+    "icon": "Phone"
+  }
+]

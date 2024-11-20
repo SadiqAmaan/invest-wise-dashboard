@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "SEBI Registered Investment Adviser",
+    "icon": "CheckCircle",
+    "description": "Registered with SEBI for investment advisory services."
+  },
+  {
+    "id": 2,
+    "name": "AMFI Certified",
+    "icon": "ShieldCheck",
+    "description": "Certified by Association of Mutual Funds in India."
+  },
+  {
+    "id": 3,
+    "name": "PDPA Compliant",
+    "icon": "Lock",
+    "description": "Complies with Personal Data Protection Act and other Indian data privacy regulations."
+  },
+  {
+    "id": 4,
+    "name": "24/7 Support",
+    "icon": "Headset",
+    "description": "Round-the-clock customer support available."
+  }
+]
