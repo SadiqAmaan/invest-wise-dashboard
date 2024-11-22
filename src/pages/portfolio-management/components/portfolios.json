@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Indian Equity Growth Fund",
+    "manager": "Rahul Sharma",
+    "type": "growth",
+    "status": "Active",
+    "totalValue": "₹1,254Cr",
+    "performance": "+12.4%",
+    "dayChange": "+1.2%",
+    "holdings": 45,
+    "sectors": 8,
+    "volatility": "14.2%",
+    "sharpeRatio": "1.85",
+    "beta": "1.12",
+    "alpha": "2.3%",
+    "maxDrawdown": "-8.5%",
+    "benchmarkComparison": "+3.2%",
+    "createdDate": "Jan 15, 2024",
+    "lastUpdated": "2 hours ago",
+    "assetAllocation": [
+      { "type": "Indian Equities", "percentage": 75, "value": "₹941Cr" },
+      { "type": "Corporate Bonds", "percentage": 15, "value": "₹188Cr" },
+      { "type": "Cash & Equivalents", "percentage": 5, "value": "₹63Cr" },
+      { "type": "Gold ETFs", "percentage": 3, "value": "₹38Cr" },
+      { "type": "REITs", "percentage": 2, "value": "₹25Cr" }
+    ],
+    "topHoldings": [
+      { "symbol": "RELIANCE", "name": "Reliance Industries Ltd.", "weight": 8.5, "change": "+2.1%" },
+      { "symbol": "TCS", "name": "Tata Consultancy Services Ltd.", "weight": 7.2, "change": "+1.8%" },
+      { "symbol": "INFY", "name": "Infosys Ltd.", "weight": 6.8, "change": "-0.5%" },
+      { "symbol": "HDFCBANK", "name": "HDFC Bank Ltd.", "weight": 5.9, "change": "+3.2%" },
+      { "symbol": "ICICIBANK", "name": "ICICI Bank Ltd.", "weight": 4.3, "change": "+5.7%" }
+    ],
+    "recentTransactions": [
+      { "type": "buy", "symbol": "BAJFINANCE", "shares": "500", "amount": "₹4,525,000", "date": "2 hours ago" },
+      { "type": "sell", "symbol": "MARUTI", "shares": "200", "amount": "₹3,840,000", "date": "1 day ago" },
+      { "type": "dividend", "symbol": "RELIANCE", "shares": "1,000", "amount": "₹230,000", "date": "3 days ago" }
+    ],
+    "performance1d": "+1.2%",
+    "performance1w": "+3.8%",
+    "performance1m": "+8.5%"
+  },
+  {
+    "id": 2,
+    "name": "Indian Debt Fund",
+    "manager": "Priya Singh",
+    "type": "conservative",
+    "status": "Active",
+    "totalValue": "₹892Cr",
+    "performance": "+8.1%",
+    "dayChange": "+0.3%",
+    "holdings": 32,
+    "sectors": 6,
+    "volatility": "8.9%",
+    "sharpeRatio": "1.42",
+    "beta": "0.68",
+    "alpha": "1.8%",
+    "maxDrawdown": "-4.2%",
+    "benchmarkComparison": "+1.8%",
+    "createdDate": "Mar 22, 2024",
+    "lastUpdated": "4 hours ago",
+    "assetAllocation": [
+      { "type": "Government Bonds", "percentage": 60, "value": "₹535Cr" },
+      { "type": "Corporate Bonds", "percentage": 25, "value": "₹223Cr" },
+      { "type": "Cash & Equivalents", "percentage": 10, "value": "₹89Cr" },
+      { "type": "REITs", "percentage": 3, "value": "₹27Cr" },
+      { "type": "Gold ETFs", "percentage": 2, "value": "₹18Cr" }
+    ],
+    "topHoldings": [
+      { "symbol": "SGB", "name": "Sovereign Gold Bond", "weight": 15.2, "change": "+0.1%" },
+      { "symbol": "NHAI", "name": "NHAI Bonds", "weight": 12.8, "change": "+0.8%" },
+      { "symbol": "PFC", "name": "Power Finance Corporation", "weight": 10.5, "change": "+0.2%" },
+      { "symbol": "NTPC", "name": "NTPC Ltd.", "weight": 8.9, "change": "+0.1%" },
+      { "symbol": "GAIL", "name": "GAIL (India) Ltd.", "weight": 6.7, "change": "+1.2%" }
+    ],
+    "recentTransactions": [
+      { "type": "buy", "symbol": "SGB", "shares": "1,000", "amount": "₹7,850,000", "date": "1 day ago" },
+      { "type": "dividend", "symbol": "NTPC", "shares": "800", "amount": "₹192,000", "date": "2 days ago" },
+      { "type": "rebalance", "symbol": "Multiple", "shares": "Various", "amount": "₹12,500,000", "date": "1 week ago" }
+    ],
+    "performance1d": "+0.3%",
+    "performance1w": "+1.2%",
+    "performance1m": "+2.8%"
+  },
+  {
+    "id": 3,
+    "name": "Indian Balanced Advantage Fund",
+    "manager": "Arjun Patel",
+    "type": "balanced",
+    "status": "Rebalancing",
+    "totalValue": "₹1,568Cr",
+    "performance": "+10.7%",
+    "dayChange": "+0.8%",
+    "holdings": 58,
+    "sectors": 10,
+    "volatility": "11.5%",
+    "sharpeRatio": "1.63",
+    "beta": "0.89",
+    "alpha": "2.1%",
+    "maxDrawdown": "-6.8%",
+    "benchmarkComparison": "+2.5%",
+    "createdDate": "Feb 08, 2024",
+    "lastUpdated": "1 hour ago",
+    "assetAllocation": [
+      { "type": "Indian Equities", "percentage": 50, "value": "₹784Cr" },
+      { "type": "Bonds", "percentage": 30, "value": "₹470Cr" },
+      { "type": "Cash & Equivalents", "percentage": 10, "value": "₹157Cr" },
+      { "type": "Gold ETFs", "percentage": 5, "value": "₹78Cr" },
+      { "type": "REITs", "percentage": 5, "value": "₹78Cr" }
+    ],
+    "topHoldings": [
+      { "symbol": "NIFTY50", "name": "Nifty 50 Index ETF", "weight": 12.5, "change": "+1.1%" },
+      { "symbol": "CORPBOND", "name": "Corporate Bond ETF", "weight": 10.8, "change": "+0.3%" },
+      { "symbol": "ITETF", "name": "IT Sector ETF", "weight": 9.2, "change": "+1.8%" },
+      { "symbol": "BANKETF", "name": "Banking Sector ETF", "weight": 7.5, "change": "+2.3%" },
+      { "symbol": "GOLDETF", "name": "Gold ETF", "weight": 6.8, "change": "+0.9%" }
+    ],
+    "recentTransactions": [
+      { "type": "rebalance", "symbol": "Multiple", "shares": "Various", "amount": "₹210,000,000", "date": "30 minutes ago" },
+      { "type": "buy", "symbol": "VWO", "shares": "2,500", "amount": "₹11,250,000", "date": "2 hours ago" },
+      { "type": "sell", "symbol": "GLD", "shares": "300", "amount": "₹5,490,000", "date": "4 hours ago" }
+    ],
+    "performance1d": "+0.8%",
+    "performance1w": "+2.5%",
+    "performance1m": "+5.2%"
+  }
+]

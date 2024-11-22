@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "label": "Sharpe Ratio",
+    "status": "good",
+    "value": "1.45",
+    "change": 0.12,
+    "description": "Risk-adjusted return measure"
+  },
+  {
+    "id": 2,
+    "label": "Volatility",
+    "status": "warning",
+    "value": "12.3%",
+    "change": -0.05,
+    "description": "Standard deviation of returns"
+  },
+  {
+    "id": 3,
+    "label": "Max Drawdown",
+    "status": "good",
+    "value": "-8.5%",
+    "change": 0.02,
+    "description": "Largest peak-to-trough decline"
+  },
+  {
+    "id": 4,
+    "label": "Beta",
+    "status": "good",
+    "value": "0.85",
+    "change": -0.03,
+    "description": "Market sensitivity"
+  }
+]

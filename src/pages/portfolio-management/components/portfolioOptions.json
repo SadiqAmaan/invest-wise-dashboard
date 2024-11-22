@@ -1,0 +1,7 @@
+[
+  { "value": "", "label": "All Portfolios" },
+  { "value": "growth-a", "label": "Indian Equity Growth Fund" },
+  { "value": "conservative-b", "label": "Indian Debt Fund" },
+  { "value": "balanced-c", "label": "Indian Balanced Advantage Fund" },
+  { "value": "tech-d", "label": "Indian IT Sector Fund" }
+]

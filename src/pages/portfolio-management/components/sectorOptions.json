@@ -1,0 +1,17 @@
+[
+  { "value": "technology", "label": "Technology" },
+  { "value": "healthcare", "label": "Healthcare" },
+  { "value": "financials", "label": "Financials" },
+  { "value": "consumer_discretionary", "label": "Consumer Discretionary" },
+  { "value": "consumer_staples", "label": "Consumer Staples" },
+  { "value": "industrials", "label": "Industrials" },
+  { "value": "energy", "label": "Energy" },
+  { "value": "utilities", "label": "Utilities" },
+  { "value": "real_estate", "label": "Real Estate" },
+  { "value": "materials", "label": "Materials" },
+  { "value": "telecommunications", "label": "Telecommunications" },
+  { "value": "pharmaceuticals", "label": "Pharmaceuticals" },
+  { "value": "automobiles", "label": "Automobiles" },
+  { "value": "metals", "label": "Metals" },
+  { "value": "textiles", "label": "Textiles" }
+]

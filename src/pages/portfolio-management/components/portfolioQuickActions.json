@@ -1,0 +1,6 @@
+[
+  { "id": "rebalance", "label": "Rebalance Portfolio", "icon": "RotateCcw", "variant": "default" },
+  { "id": "add-position", "label": "Add Position in Indian Stocks", "icon": "Plus", "variant": "outline" },
+  { "id": "generate-report", "label": "Generate Indian Market Report", "icon": "FileText", "variant": "outline" },
+  { "id": "export-data", "label": "Export Portfolio Data", "icon": "Download", "variant": "outline" }
+]
