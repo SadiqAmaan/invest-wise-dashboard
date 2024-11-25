@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Indian Equity Growth Fund - December 2024 Performance",
+    "type": "performance",
+    "portfolio": "Indian Equity Growth Fund",
+    "createdAt": "Dec 15, 2024",
+    "size": 2457600,
+    "downloads": 23,
+    "status": "completed",
+    "description": "Monthly performance analysis with Nifty 50 benchmark comparison and risk metrics",
+    "version": "1.0",
+    "versions": ["1.0"]
+  },
+  {
+    "id": 2,
+    "name": "Risk Assessment - Q4 2024",
+    "type": "risk",
+    "portfolio": "Conservative Debt Fund",
+    "createdAt": "Dec 10, 2024",
+    "size": 1843200,
+    "downloads": 15,
+    "status": "completed",
+    "description": "Quarterly risk analysis with VaR calculations and stress testing",
+    "version": "2.1",
+    "versions": ["1.0", "2.0", "2.1"]
+  },
+  {
+    "id": 3,
+    "name": "ESG Impact Report - November 2024",
+    "type": "compliance",
+    "portfolio": "ESG India Fund",
+    "createdAt": "Dec 5, 2024",
+    "size": 3276800,
+    "downloads": 8,
+    "status": "completed",
+    "description": "Environmental, Social, and Governance impact assessment for Indian companies",
+    "version": "1.0",
+    "versions": ["1.0"]
+  }
+]

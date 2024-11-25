@@ -1,0 +1,7 @@
+[
+  { "value": "monthly-summary", "label": "Monthly Summary" },
+  { "value": "quarterly-review", "label": "Quarterly Review" },
+  { "value": "performance-report", "label": "Performance Report" },
+  { "value": "risk-analysis", "label": "Risk Analysis" },
+  { "value": "holdings-report", "label": "Holdings Report" }
+]

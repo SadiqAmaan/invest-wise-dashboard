@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Board Members",
+    "description": "Executive board and key stakeholders",
+    "recipients": 8,
+    "lastUsed": "Dec 15, 2024",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "createdBy": "Rahul Sharma"
+  },
+  {
+    "id": 2,
+    "name": "Client Advisors",
+    "description": "All client relationship managers",
+    "recipients": 15,
+    "lastUsed": "Dec 10, 2024",
+    "createdAt": "2024-02-20T14:30:00.000Z",
+    "createdBy": "Priya Singh"
+  },
+  {
+    "id": 3,
+    "name": "SEBI Compliance Team",
+    "description": "SEBI regulatory compliance officers",
+    "recipients": 6,
+    "lastUsed": "Dec 5, 2024",
+    "createdAt": "2024-03-10T09:15:00.000Z",
+    "createdBy": "Arjun Patel"
+  }
+]

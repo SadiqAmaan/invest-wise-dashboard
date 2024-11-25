@@ -1,0 +1,8 @@
+[
+  { "value": "all", "label": "All Categories" },
+  { "value": "Performance Reports", "label": "Performance Reports" },
+  { "value": "Risk Management", "label": "Risk Management" },
+  { "value": "Regulatory", "label": "SEBI Compliance" },
+  { "value": "Portfolio Analysis", "label": "Portfolio Analysis" },
+  { "value": "Sustainability", "label": "Sustainability" }
+]

@@ -1,0 +1,7 @@
+[
+  { "value": "performance-update", "label": "Performance Update" },
+  { "value": "market-commentary", "label": "Market Commentary" },
+  { "value": "portfolio-review", "label": "Portfolio Review" },
+  { "value": "risk-alert", "label": "Risk Alert" },
+  { "value": "custom", "label": "Custom Message" }
+]

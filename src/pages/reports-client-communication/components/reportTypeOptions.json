@@ -1,0 +1,7 @@
+[
+  { "value": "all", "label": "All Reports" },
+  { "value": "performance", "label": "Performance" },
+  { "value": "risk", "label": "Risk Analysis" },
+  { "value": "compliance", "label": "Compliance" },
+  { "value": "summary", "label": "Summary" }
+]

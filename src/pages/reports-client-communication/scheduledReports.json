@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Monthly Performance Update",
+    "template": "Monthly Performance Summary",
+    "frequency": "monthly",
+    "nextRun": "Jan 1, 2025 9:00 AM",
+    "recipients": 45,
+    "portfolio": "Indian Equity Growth Fund",
+    "status": "active",
+    "lastSent": "Dec 1, 2024"
+  },
+  {
+    "id": 2,
+    "name": "Weekly Risk Summary",
+    "template": "Risk Analysis Report",
+    "frequency": "weekly",
+    "nextRun": "Jan 20, 2025 8:00 AM",
+    "recipients": 12,
+    "portfolio": "Conservative Debt Fund",
+    "status": "active",
+    "lastSent": "Jan 13, 2025"
+  },
+  {
+    "id": 3,
+    "name": "Quarterly Board Report",
+    "template": "Quarterly Review",
+    "frequency": "quarterly",
+    "nextRun": "Mar 31, 2025 10:00 AM",
+    "recipients": 8,
+    "portfolio": "All Portfolios",
+    "status": "paused",
+    "lastSent": "Sep 30, 2024"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "performance-update": {
+    "subject": "Portfolio Performance Update - {month} {year}",
+    "content": "Dear {clientName},\n\nI hope this message finds you well. I wanted to provide you with an update on your portfolio performance for {period}.\n\nKey Highlights:\n• Portfolio return: {return}% for the period\n• Benchmark comparison: Nifty 50 and BSE Sensex\n• Risk metrics remain within target ranges\n\n{personalMessage}\n\nPlease find the detailed performance report attached. If you have any questions or would like to schedule a review meeting, please don't hesitate to reach out.\n\nBest regards,\n{managerName}\nPortfolio Manager\nInvest Wise Dashboard"
+  },
+  "market-commentary": {
+    "subject": "Indian Market Commentary - {date}",
+    "content": "Dear {clientName},\n\nI wanted to share some thoughts on the current Indian market environment and how it may impact your portfolio.\n\nMarket Overview:\n• Nifty 50 and BSE Sensex performance\n• RBI monetary policy and interest rate decisions\n• Sector performance and opportunities in Indian market\n\nPortfolio Impact:\n• How these conditions affect your Indian equity holdings\n• Any adjustments we're considering based on market conditions\n• Risk management measures in place\n\n{personalMessage}\n\nAs always, please feel free to contact me if you have any questions or concerns.\n\nBest regards,\n{managerName}\nPortfolio Manager\nInvest Wise Dashboard"
+  }
+}

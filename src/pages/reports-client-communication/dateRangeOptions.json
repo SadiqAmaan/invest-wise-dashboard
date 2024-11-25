@@ -1,0 +1,9 @@
+[
+  { "value": "1W", "label": "Last Week" },
+  { "value": "1M", "label": "Last Month" },
+  { "value": "3M", "label": "Last 3 Months" },
+  { "value": "6M", "label": "Last 6 Months" },
+  { "value": "1Y", "label": "Last Year" },
+  { "value": "YTD", "label": "Year to Date" },
+  { "value": "custom", "label": "Custom Range" }
+]

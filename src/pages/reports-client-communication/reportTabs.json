@@ -1,0 +1,6 @@
+[
+  { "id": "templates", "label": "Templates", "icon": "FileText" },
+  { "id": "scheduled", "label": "Scheduled", "icon": "Calendar" },
+  { "id": "library", "label": "Library", "icon": "Folder" },
+  { "id": "distribution", "label": "Distribution", "icon": "Users" }
+]

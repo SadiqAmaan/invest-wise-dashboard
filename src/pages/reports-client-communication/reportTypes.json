@@ -1,0 +1,7 @@
+[
+  { "value": "performance", "label": "Performance Report" },
+  { "value": "holdings", "label": "Holdings Report" },
+  { "value": "risk", "label": "Risk Analysis Report" },
+  { "value": "compliance", "label": "Compliance Report" },
+  { "value": "custom", "label": "Custom Report" }
+]

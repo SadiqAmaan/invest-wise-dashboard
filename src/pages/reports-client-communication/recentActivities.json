@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "type": "report_generated",
+    "title": "Monthly Performance Report Generated",
+    "description": "Indian Equity Growth Fund performance report has been generated and sent to 45 recipients",
+    "timestamp": "2024-12-15T10:30:00Z",
+    "user": "System",
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "type": "email_sent",
+    "title": "Client Email Sent",
+    "description": "Quarterly review email sent to board members",
+    "timestamp": "2024-12-14T14:20:00Z",
+    "user": "Rahul Sharma",
+    "icon": "Mail"
+  },
+  {
+    "id": 3,
+    "type": "schedule_created",
+    "title": "New Schedule Created",
+    "description": "Weekly risk summary scheduled for Conservative Debt Fund",
+    "timestamp": "2024-12-13T09:15:00Z",
+    "user": "Priya Singh",
+    "icon": "Calendar"
+  }
+]
