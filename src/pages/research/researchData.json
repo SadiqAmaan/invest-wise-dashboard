@@ -1,0 +1,58 @@
+{
+  "marketOverview": {
+    "indices": [
+      { "name": "Nifty 50", "value": "18,500.89", "change": "+150.45", "changePercent": "+0.82%" },
+      { "name": "BSE Sensex", "value": "62,300.78", "change": "+450.23", "changePercent": "+0.73%" },
+      { "name": "Nifty Bank", "value": "43,875.24", "change": "+320.67", "changePercent": "+0.74%" },
+      { "name": "India VIX", "value": "14.42", "change": "-0.85", "changePercent": "-5.56%" }
+    ],
+    "sectors": [
+      { "name": "Technology", "performance": "+3.1%", "color": "text-success" },
+      { "name": "Healthcare", "performance": "+2.0%", "color": "text-success" },
+      { "name": "Financial", "performance": "+1.5%", "color": "text-success" },
+      { "name": "Energy", "performance": "-0.5%", "color": "text-error" },
+      { "name": "Consumer", "performance": "+0.8%", "color": "text-success" },
+      { "name": "Industrial", "performance": "-0.2%", "color": "text-error" }
+    ]
+  },
+  "topMovers": {
+    "gainers": [
+      { "symbol": "RELIANCE", "name": "Reliance Industries", "price": "₹2,450.80", "change": "+4.7%" },
+      { "symbol": "TCS", "name": "Tata Consultancy Services", "price": "₹3,245.60", "change": "+3.2%" },
+      { "symbol": "HDFCBANK", "name": "HDFC Bank", "price": "₹1,752.75", "change": "+2.8%" },
+      { "symbol": "INFY", "name": "Infosys", "price": "₹1,390.90", "change": "+2.2%" }
+    ],
+    "losers": [
+      { "symbol": "ICICIBANK", "name": "ICICI Bank", "price": "₹612.78", "change": "-1.4%" },
+      { "symbol": "AXISBANK", "name": "Axis Bank", "price": "₹425.30", "change": "-1.1%" },
+      { "symbol": "SBIN", "name": "State Bank of India", "price": "₹478.45", "change": "-0.9%" },
+      { "symbol": "YESBANK", "name": "Yes Bank", "price": "₹120.20", "change": "-0.7%" }
+    ]
+  },
+  "analystRecommendations": [
+    {
+      "symbol": "RELIANCE",
+      "name": "Reliance Industries",
+      "rating": "Buy",
+      "targetPrice": "₹2,600.00",
+      "analyst": "ICICI Securities",
+      "date": "2025-01-20"
+    },
+    {
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services",
+      "rating": "Strong Buy",
+      "targetPrice": "₹3,500.00",
+      "analyst": "Kotak Securities",
+      "date": "2025-01-19"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank",
+      "rating": "Buy",
+      "targetPrice": "₹1,800.00",
+      "analyst": "Motilal Oswal",
+      "date": "2025-01-18"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  { "id": "overview", "label": "Market Overview", "icon": "BarChart3" },
+  { "id": "movers", "label": "Top Movers", "icon": "TrendingUp" },
+  { "id": "analysis", "label": "Stock Analysis", "icon": "Search" },
+  { "id": "recommendations", "label": "Analyst Reports", "icon": "FileText" }
+]
