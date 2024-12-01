@@ -1,0 +1,20 @@
+{
+  "timezoneOptions": [
+    { "value": "Asia/Kolkata", "label": "India Standard Time (IST)" },
+    { "value": "Asia/Mumbai", "label": "Mumbai Time (IST)" },
+    { "value": "Asia/Delhi", "label": "Delhi Time (IST)" },
+    { "value": "America/New_York", "label": "Eastern Time (ET)" },
+    { "value": "America/Chicago", "label": "Central Time (CT)" },
+    { "value": "Europe/London", "label": "Greenwich Mean Time (GMT)" },
+    { "value": "Europe/Zurich", "label": "Central European Time (CET)" },
+    { "value": "Asia/Tokyo", "label": "Japan Standard Time (JST)" }
+  ],
+  "departmentOptions": [
+    { "value": "Investment Management", "label": "Investment Management" },
+    { "value": "Risk Management", "label": "Risk Management" },
+    { "value": "Research", "label": "Research" },
+    { "value": "Operations", "label": "Operations" },
+    { "value": "Compliance", "label": "Compliance" },
+    { "value": "Client Relations", "label": "Client Relations" }
+  ]
+}

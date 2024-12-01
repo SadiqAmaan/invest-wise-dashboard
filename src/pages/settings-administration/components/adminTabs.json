@@ -1,0 +1,6 @@
+[
+  { "id": "users", "label": "User Management", "icon": "Users" },
+  { "id": "permissions", "label": "Permissions", "icon": "Shield" },
+  { "id": "audit", "label": "Audit Logs", "icon": "FileText" },
+  { "id": "system", "label": "System Monitor", "icon": "Activity" }
+]

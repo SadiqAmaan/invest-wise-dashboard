@@ -1,0 +1,79 @@
+{
+  "viewOptions": [
+    { "value": "overview", "label": "Portfolio Overview" },
+    { "value": "performance", "label": "Performance Dashboard" },
+    { "value": "analytics", "label": "Analytics View" },
+    { "value": "holdings", "label": "Holdings Summary" }
+  ],
+  "refreshOptions": [
+    { "value": "10", "label": "10 seconds" },
+    { "value": "30", "label": "30 seconds" },
+    { "value": "60", "label": "1 minute" },
+    { "value": "300", "label": "5 minutes" },
+    { "value": "600", "label": "10 minutes" }
+  ],
+  "chartTypeOptions": [
+    { "value": "line", "label": "Line Chart" },
+    { "value": "candlestick", "label": "Candlestick Chart" },
+    { "value": "area", "label": "Area Chart" },
+    { "value": "bar", "label": "Bar Chart" }
+  ],
+  "colorSchemeOptions": [
+    { "value": "professional", "label": "Professional Blue" },
+    { "value": "classic", "label": "Classic Green/Red" },
+    { "value": "modern", "label": "Modern Gradient" },
+    { "value": "monochrome", "label": "Monochrome" }
+  ],
+  "timeframeOptions": [
+    { "value": "1D", "label": "1 Day" },
+    { "value": "1W", "label": "1 Week" },
+    { "value": "1M", "label": "1 Month" },
+    { "value": "3M", "label": "3 Months" },
+    { "value": "6M", "label": "6 Months" },
+    { "value": "1Y", "label": "1 Year" },
+    { "value": "3Y", "label": "3 Years" },
+    { "value": "5Y", "label": "5 Years" }
+  ],
+  "themeOptions": [
+    { "value": "light", "label": "Light Mode" },
+    { "value": "dark", "label": "Dark Mode" },
+    { "value": "auto", "label": "Auto (System)" }
+  ],
+  "currencyOptions": [
+    { "value": "INR", "label": "Indian Rupee (₹)" },
+    { "value": "USD", "label": "US Dollar ($)" },
+    { "value": "EUR", "label": "Euro (€)" },
+    { "value": "GBP", "label": "British Pound (£)" },
+    { "value": "JPY", "label": "Japanese Yen (¥)" }
+  ],
+  "numberFormatOptions": [
+    { "value": "US", "label": "US Format (1,000.00)" },
+    { "value": "EU", "label": "EU Format (1.000,00)" },
+    { "value": "IN", "label": "Indian Format (1,00,000)" }
+  ],
+  "dateFormatOptions": [
+    { "value": "MM/DD/YYYY", "label": "MM/DD/YYYY (US)" },
+    { "value": "DD/MM/YYYY", "label": "DD/MM/YYYY (EU)" },
+    { "value": "YYYY-MM-DD", "label": "YYYY-MM-DD (ISO)" }
+  ],
+  "timezoneOptions": [
+    { "value": "Asia/Kolkata", "label": "India Standard Time (IST)" },
+    { "value": "Asia/Mumbai", "label": "Mumbai Time (IST)" },
+    { "value": "Asia/Delhi", "label": "Delhi Time (IST)" },
+    { "value": "America/New_York", "label": "Eastern Time (ET)" },
+    { "value": "Europe/London", "label": "London (GMT)" },
+    { "value": "Europe/Paris", "label": "Paris (CET)" },
+    { "value": "Asia/Tokyo", "label": "Tokyo (JST)" }
+  ],
+  "portfolioOptions": [
+    { "value": "indian-equity-growth", "label": "Indian Equity Growth Fund" },
+    { "value": "conservative-debt", "label": "Conservative Debt Fund" },
+    { "value": "balanced-advantage", "label": "Balanced Advantage Fund" }
+  ],
+  "precisionOptions": [
+    { "value": "0", "label": "Whole numbers (123)" },
+    { "value": "1", "label": "One decimal (123.4)" },
+    { "value": "2", "label": "Two decimals (123.45)" },
+    { "value": "3", "label": "Three decimals (123.456)" }
+  ]
+}

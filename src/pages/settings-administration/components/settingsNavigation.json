@@ -1,0 +1,32 @@
+[
+  {
+    "id": "profile",
+    "label": "Profile",
+    "icon": "User",
+    "description": "Personal information and credentials"
+  },
+  {
+    "id": "security",
+    "label": "Security",
+    "icon": "Shield",
+    "description": "Password, MFA, and session management"
+  },
+  {
+    "id": "notifications",
+    "label": "Notifications",
+    "icon": "Bell",
+    "description": "Email, SMS, and alert preferences"
+  },
+  {
+    "id": "preferences",
+    "label": "Preferences",
+    "icon": "Settings",
+    "description": "Dashboard, charts, and display settings"
+  },
+  {
+    "id": "admin",
+    "label": "Administration",
+    "icon": "Users",
+    "description": "User management and system settings"
+  }
+]

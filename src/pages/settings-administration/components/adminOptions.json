@@ -1,0 +1,18 @@
+{
+  "roleOptions": [
+    { "value": "admin", "label": "Administrator" },
+    { "value": "portfolio_manager", "label": "Portfolio Manager" },
+    { "value": "analyst", "label": "Senior Analyst" },
+    { "value": "risk_manager", "label": "Risk Manager" },
+    { "value": "compliance", "label": "Compliance Officer" },
+    { "value": "client", "label": "Client" }
+  ],
+  "departmentOptions": [
+    { "value": "Investment Management", "label": "Investment Management" },
+    { "value": "Risk Management", "label": "Risk Management" },
+    { "value": "Research", "label": "Research" },
+    { "value": "Operations", "label": "Operations" },
+    { "value": "Compliance", "label": "Compliance" },
+    { "value": "Client Relations", "label": "Client Relations" }
+  ]
+}

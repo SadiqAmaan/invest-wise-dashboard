@@ -1,0 +1,40 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "device": "MacBook Pro",
+      "browser": "Chrome 120.0",
+      "location": "Mumbai, Maharashtra",
+      "ipAddress": "192.168.1.1",
+      "lastActive": "2 minutes ago",
+      "current": true
+    },
+    {
+      "id": 2,
+      "device": "iPhone 14",
+      "browser": "Safari Mobile",
+      "location": "Delhi, Delhi",
+      "ipAddress": "192.168.1.2",
+      "lastActive": "1 hour ago",
+      "current": false
+    }
+  ],
+  "apiKeys": [
+    {
+      "id": 1,
+      "name": "Production API Key",
+      "key": "sk_prod_****************************",
+      "status": "active",
+      "created": "Jan 15, 2024",
+      "lastUsed": "5 minutes ago"
+    },
+    {
+      "id": 2,
+      "name": "Development API Key",
+      "key": "sk_dev_*****************************",
+      "status": "active",
+      "created": "Dec 1, 2024",
+      "lastUsed": "2 days ago"
+    }
+  ]
+}
