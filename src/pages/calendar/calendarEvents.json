@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Union Budget 2025 Announcement",
+    "date": "2025-02-01",
+    "time": "10:00",
+    "type": "government",
+    "description": "Union Budget 2025 presented by the Finance Minister",
+    "portfolio": "All Portfolios",
+    "attendees": []
+  },
+  {
+    "id": 2,
+    "title": "RBI Monetary Policy Committee Meeting",
+    "date": "2025-04-05",
+    "time": "14:00",
+    "type": "economic",
+    "description": "Reserve Bank of India Monetary Policy Committee meeting",
+    "portfolio": "All Portfolios",
+    "impact": "High",
+    "attendees": []
+  },
+  {
+    "id": 3,
+    "title": "GST Council Meeting",
+    "date": "2025-03-15",
+    "time": "11:00",
+    "type": "government",
+    "description": "Goods and Services Tax Council meeting to discuss tax rates",
+    "portfolio": "All Portfolios",
+    "attendees": []
+  },
+  {
+    "id": 4,
+    "title": "Diwali Market Holiday",
+    "date": "2025-11-01",
+    "time": "",
+    "type": "holiday",
+    "description": "Stock market holiday for Diwali festival",
+    "portfolio": "",
+    "attendees": []
+  }
+]

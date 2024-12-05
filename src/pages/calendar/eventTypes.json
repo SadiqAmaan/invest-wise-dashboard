@@ -1,0 +1,7 @@
+{
+  "meeting": { "color": "bg-primary text-primary-foreground", "icon": "Users" },
+  "earnings": { "color": "bg-success text-success-foreground", "icon": "TrendingUp" },
+  "economic": { "color": "bg-warning text-warning-foreground", "icon": "Building" },
+  "client": { "color": "bg-accent text-accent-foreground", "icon": "User" },
+  "deadline": { "color": "bg-error text-error-foreground", "icon": "Clock" }
+}
