@@ -67,7 +67,24 @@ investment-portfolio-dashboard/
 
 ## 🚀 Deployment
 
-Deploy on Vercel, Netlify, or GitHub Pages. Build the project with `npm run build` and follow the platform's deployment guide.
+### Vercel
+
+This project is configured for easy deployment on Vercel. The `vercel.json` file includes:
+
+- Build command: `npm run build`
+- Output directory: `build`
+- Rewrites for single-page application routing
+- Cache headers for static assets
+
+To deploy:
+
+1. Connect your GitHub repository to Vercel.
+2. Vercel will automatically detect the configuration and build the project.
+3. Your app will be live at the provided Vercel URL.
+
+### Other Platforms
+
+Deploy on Netlify or GitHub Pages. Build the project with `npm run build` and follow the platform's deployment guide.
 
 <div align="center">
 Made with ❤️ by Sadiq Amaan
