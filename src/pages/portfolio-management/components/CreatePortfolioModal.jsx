@@ -200,7 +200,7 @@ const CreatePortfolioModal = ({ isOpen, onClose, onCreatePortfolio }) => {
             <Input
               label="Initial Cash Amount"
               type="text"
-              placeholder="$1,000,000"
+              placeholder="₹1,000,000"
               value={formData.initialCash}
               onChange={(e) => handleInputChange('initialCash', e.target.value)}
               error={errors.initialCash}

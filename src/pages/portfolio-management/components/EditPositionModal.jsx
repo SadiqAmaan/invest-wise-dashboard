@@ -89,12 +89,12 @@ const EditPositionModal = ({ isOpen, onClose, onSavePosition, position }) => {
         symbol: formData.symbol.toUpperCase(),
         name: formData.name,
         shares: parseInt(formData.shares),
-        avgCost: `$${parseFloat(formData.avgCost).toFixed(2)}`,
+        avgCost: `₹${parseFloat(formData.avgCost).toFixed(2)}`,
         sector: sectorOptions.find(s => s.value === formData.sector)?.label || formData.sector,
         notes: formData.notes,
         // Calculate market value (mock current price)
-        currentPrice: `$${(parseFloat(formData.avgCost) * (0.95 + Math.random() * 0.1)).toFixed(2)}`,
-        marketValue: `$${(parseInt(formData.shares) * parseFloat(formData.avgCost) * (0.95 + Math.random() * 0.1)).toFixed(2)}`,
+        currentPrice: `₹${(parseFloat(formData.avgCost) * (0.95 + Math.random() * 0.1)).toFixed(2)}`,
+        marketValue: `₹${(parseInt(formData.shares) * parseFloat(formData.avgCost) * (0.95 + Math.random() * 0.1)).toFixed(2)}`,
         lastUpdated: new Date().toLocaleString()
       };
       
@@ -213,7 +213,7 @@ const EditPositionModal = ({ isOpen, onClose, onSavePosition, position }) => {
                 <div>
                   <span className="text-muted-foreground">Total Cost Basis:</span>
                   <span className="font-medium text-foreground ml-2">
-                    ${(parseInt(formData.shares) * parseFloat(formData.avgCost)).toLocaleString()}
+                    ₹{(parseInt(formData.shares) * parseFloat(formData.avgCost)).toLocaleString()}
                   </span>
                 </div>
                 <div>

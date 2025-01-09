@@ -137,18 +137,18 @@ const HoldingsTable = () => {
                   </td>
                   <td className="p-4 text-right">
                     <span className="text-sm text-foreground font-data">
-                      ${holding.price.toFixed(2)}
+                      ₹{holding.price.toFixed(2)}
                     </span>
                   </td>
                   <td className="p-4 text-right">
                     <span className="text-sm font-medium text-foreground font-data">
-                      ${holding.value.toLocaleString()}
+                      ₹{holding.value.toLocaleString()}
                     </span>
                   </td>
                   <td className="p-4 text-right">
                     <div className="flex flex-col items-end">
                       <span className={`text-sm font-medium ${changeColor} font-data`}>
-                        {isPositive ? '+' : ''}${holding.change.toFixed(2)}
+                        {isPositive ? '+' : ''}₹{holding.change.toFixed(2)}
                       </span>
                       <span className={`text-xs ${changeColor} font-data`}>
                         ({isPositive ? '+' : ''}{holding.changePercent.toFixed(2)}%)
