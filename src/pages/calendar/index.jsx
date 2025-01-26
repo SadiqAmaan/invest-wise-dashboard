@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import Header from '../../components/ui/Header';
-import Breadcrumb from '../../components/ui/Breadcrumb';
-import Button from '../../components/ui/Button';
-import Modal from '../../components/ui/Modal';
-import Input from '../../components/ui/Input';
-import Select from '../../components/ui/Select';
-import { Card, CardHeader, CardTitle, CardContent } from '../../components/ui/Card';
-import Icon from '../../components/AppIcon';
-import { useToast } from '../../components/ui/Toast';
-import calendarEventsData from './calendarEvents.json';
-import monthNames from './monthNames.json';
-import dayNames from './dayNames.json';
-import eventTypes from './eventTypes.json';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import Header from "../../components/ui/Header";
+import Breadcrumb from "../../components/ui/Breadcrumb";
+import Button from "../../components/ui/Button";
+import Modal from "../../components/ui/Modal";
+import Input from "../../components/ui/Input";
+import Select from "../../components/ui/Select";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "../../components/ui/Card";
+import Icon from "../../components/AppIcon";
+import { useToast } from "../../components/ui/Toast";
+import calendarEventsData from "./calendarEvents.json";
+import monthNames from "./monthNames.json";
+import dayNames from "./dayNames.json";
+import eventTypes from "./eventTypes.json";
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -30,19 +35,19 @@ const Calendar = () => {
     const lastDay = new Date(year, month + 1, 0);
     const firstDayWeek = firstDay.getDay();
     const daysInMonth = lastDay.getDate();
-    
+
     const days = [];
-    
+
     // Previous month days
     for (let i = firstDayWeek - 1; i >= 0; i--) {
       const prevDate = new Date(year, month, -i);
       days.push({
         date: prevDate,
         isCurrentMonth: false,
-        isToday: false
+        isToday: false,
       });
     }
-    
+
     // Current month days
     const today = new Date();
     for (let i = 1; i <= daysInMonth; i++) {
@@ -50,10 +55,10 @@ const Calendar = () => {
       days.push({
         date: currentDate,
         isCurrentMonth: true,
-        isToday: currentDate.toDateString() === today.toDateString()
+        isToday: currentDate.toDateString() === today.toDateString(),
       });
     }
-    
+
     // Next month days to fill grid
     const remainingCells = 42 - days.length;
     for (let i = 1; i <= remainingCells; i++) {
@@ -61,16 +66,16 @@ const Calendar = () => {
       days.push({
         date: nextDate,
         isCurrentMonth: false,
-        isToday: false
+        isToday: false,
       });
     }
-    
+
     return days;
   };
 
   const getEventsForDate = (date) => {
-    const dateString = date.toISOString().split('T')[0];
-    return events.filter(event => event.date === dateString);
+    const dateString = date.toISOString().split("T")[0];
+    return events.filter((event) => event.date === dateString);
   };
 
   const handleDateClick = (date) => {
@@ -84,15 +89,15 @@ const Calendar = () => {
   const handleSaveEvent = (eventData) => {
     const newEvent = {
       ...eventData,
-      id: Date.now()
+      id: Date.now(),
     };
-    setEvents(prev => [...prev, newEvent]);
-    toast.success('Event added successfully');
+    setEvents((prev) => [...prev, newEvent]);
+    toast.success("Event added successfully");
     setIsEventModalOpen(false);
   };
 
   const navigateMonth = (direction) => {
-    setCurrentDate(prev => {
+    setCurrentDate((prev) => {
       const newDate = new Date(prev);
       newDate.setMonth(prev.getMonth() + direction);
       return newDate;
@@ -100,36 +105,48 @@ const Calendar = () => {
   };
 
   const upcomingEvents = events
-    .filter(event => new Date(event.date) >= new Date())
-    .sort((a, b) => new Date(a.date + 'T' + a.time) - new Date(b.date + 'T' + b.time))
+    .filter((event) => new Date(event.date) >= new Date())
+    .sort(
+      (a, b) =>
+        new Date(a.date + "T" + a.time) - new Date(b.date + "T" + b.time)
+    )
     .slice(0, 5);
 
   return (
     <>
       <Helmet>
         <title>Calendar - Invest Wise</title>
-        <meta name="description" content="Portfolio calendar with investment events, meetings, earnings releases, and economic indicators." />
+        <meta
+          name="description"
+          content="Portfolio calendar with investment events, meetings, earnings releases, and economic indicators."
+        />
       </Helmet>
 
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen">
         <main className="pt-16">
           <div className="container-dashboard py-8">
             <Breadcrumb />
-            
+
             {/* Page Header */}
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8">
               <div>
-                <h1 className="text-3xl font-semibold text-foreground mb-2">Portfolio Calendar</h1>
+                <h1 className="text-3xl font-semibold text-foreground mb-2">
+                  Portfolio Calendar
+                </h1>
                 <p className="text-muted-foreground">
                   Track important dates, meetings, and market events
                 </p>
               </div>
-              
+
               <div className="flex items-center space-x-3 mt-4 lg:mt-0">
                 <Button variant="outline" iconName="Download">
                   Export Calendar
                 </Button>
-                <Button variant="default" iconName="Plus" onClick={handleAddEvent}>
+                <Button
+                  variant="default"
+                  iconName="Plus"
+                  onClick={handleAddEvent}
+                >
                   Add Event
                 </Button>
               </div>
@@ -142,7 +159,8 @@ const Calendar = () => {
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <CardTitle className="text-2xl">
-                        {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
+                        {monthNames[currentDate.getMonth()]}{" "}
+                        {currentDate.getFullYear()}
                       </CardTitle>
                       <div className="flex items-center space-x-2">
                         <Button
@@ -181,38 +199,44 @@ const Calendar = () => {
                         </div>
                       ))}
                     </div>
-                    
+
                     {/* Calendar Grid */}
                     <div className="grid grid-cols-7 gap-1">
                       {getDaysInMonth(currentDate).map((day, index) => {
                         const dayEvents = getEventsForDate(day.date);
-                        
+
                         return (
                           <div
                             key={index}
                             onClick={() => handleDateClick(day.date)}
                             className={`p-2 min-h-24 border border-border rounded-lg cursor-pointer hover:bg-muted/30 transition-colors ${
-                              !day.isCurrentMonth ? 'opacity-40' : ''
+                              !day.isCurrentMonth ? "opacity-40" : ""
                             } ${
-                              day.isToday ? 'bg-primary/10 border-primary' : ''
+                              day.isToday ? "bg-primary/10 border-primary" : ""
                             } ${
-                              selectedDate && selectedDate.toDateString() === day.date.toDateString()
-                                ? 'bg-accent/20 border-accent' :''
+                              selectedDate &&
+                              selectedDate.toDateString() ===
+                                day.date.toDateString()
+                                ? "bg-accent/20 border-accent"
+                                : ""
                             }`}
                           >
-                            <div className={`text-sm font-medium mb-1 ${
-                              day.isToday ? 'text-primary' : 'text-foreground'
-                            }`}>
+                            <div
+                              className={`text-sm font-medium mb-1 ${
+                                day.isToday ? "text-primary" : "text-foreground"
+                              }`}
+                            >
                               {day.date.getDate()}
                             </div>
-                            
+
                             {/* Event indicators */}
                             <div className="space-y-1">
                               {dayEvents.slice(0, 2).map((event) => (
                                 <div
                                   key={event.id}
                                   className={`px-1 py-0.5 rounded text-xs truncate ${
-                                    eventTypes[event.type]?.color || 'bg-muted text-muted-foreground'
+                                    eventTypes[event.type]?.color ||
+                                    "bg-muted text-muted-foreground"
                                   }`}
                                   title={event.title}
                                 >
@@ -246,17 +270,30 @@ const Calendar = () => {
                   <CardContent>
                     <div className="space-y-3">
                       {upcomingEvents.map((event) => (
-                        <div key={event.id} className="p-3 bg-muted/30 rounded-lg">
+                        <div
+                          key={event.id}
+                          className="p-3 bg-muted/30 rounded-lg"
+                        >
                           <div className="flex items-start space-x-3">
-                            <div className={`p-1 rounded ${eventTypes[event.type]?.color || 'bg-muted'}`}>
-                              <Icon name={eventTypes[event.type]?.icon || 'Calendar'} size={12} />
+                            <div
+                              className={`p-1 rounded ${
+                                eventTypes[event.type]?.color || "bg-muted"
+                              }`}
+                            >
+                              <Icon
+                                name={
+                                  eventTypes[event.type]?.icon || "Calendar"
+                                }
+                                size={12}
+                              />
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="font-medium text-sm text-foreground truncate">
                                 {event.title}
                               </div>
                               <div className="text-xs text-muted-foreground">
-                                {new Date(event.date).toLocaleDateString()} at {event.time}
+                                {new Date(event.date).toLocaleDateString()} at{" "}
+                                {event.time}
                               </div>
                               {event.portfolio && (
                                 <div className="text-xs text-muted-foreground mt-1">
@@ -280,8 +317,12 @@ const Calendar = () => {
                     <div className="space-y-2">
                       {Object.entries(eventTypes).map(([type, config]) => (
                         <div key={type} className="flex items-center space-x-2">
-                          <div className={`w-3 h-3 rounded ${config.color}`}></div>
-                          <span className="text-sm text-foreground capitalize">{type}</span>
+                          <div
+                            className={`w-3 h-3 rounded ${config.color}`}
+                          ></div>
+                          <span className="text-sm text-foreground capitalize">
+                            {type}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -295,13 +336,28 @@ const Calendar = () => {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2">
-                      <Button variant="outline" size="sm" fullWidth iconName="UserPlus">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        fullWidth
+                        iconName="UserPlus"
+                      >
                         Schedule Client Meeting
                       </Button>
-                      <Button variant="outline" size="sm" fullWidth iconName="FileText">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        fullWidth
+                        iconName="FileText"
+                      >
                         Set Review Reminder
                       </Button>
-                      <Button variant="outline" size="sm" fullWidth iconName="Bell">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        fullWidth
+                        iconName="Bell"
+                      >
                         Add Market Alert
                       </Button>
                     </div>
@@ -322,13 +378,27 @@ const Calendar = () => {
                   {getEventsForDate(selectedDate).length > 0 ? (
                     <div className="space-y-4">
                       {getEventsForDate(selectedDate).map((event) => (
-                        <div key={event.id} className="flex items-start space-x-4 p-4 bg-muted/30 rounded-lg">
-                          <div className={`p-2 rounded ${eventTypes[event.type]?.color || 'bg-muted'}`}>
-                            <Icon name={eventTypes[event.type]?.icon || 'Calendar'} size={16} />
+                        <div
+                          key={event.id}
+                          className="flex items-start space-x-4 p-4 bg-muted/30 rounded-lg"
+                        >
+                          <div
+                            className={`p-2 rounded ${
+                              eventTypes[event.type]?.color || "bg-muted"
+                            }`}
+                          >
+                            <Icon
+                              name={eventTypes[event.type]?.icon || "Calendar"}
+                              size={16}
+                            />
                           </div>
                           <div className="flex-1">
-                            <div className="font-medium text-foreground">{event.title}</div>
-                            <div className="text-sm text-muted-foreground">{event.time}</div>
+                            <div className="font-medium text-foreground">
+                              {event.title}
+                            </div>
+                            <div className="text-sm text-muted-foreground">
+                              {event.time}
+                            </div>
                             {event.description && (
                               <div className="text-sm text-muted-foreground mt-1">
                                 {event.description}
@@ -341,10 +411,18 @@ const Calendar = () => {
                             )}
                           </div>
                           <div className="flex space-x-1">
-                            <Button variant="ghost" size="icon" className="w-8 h-8">
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="w-8 h-8"
+                            >
                               <Icon name="Edit" size={14} />
                             </Button>
-                            <Button variant="ghost" size="icon" className="w-8 h-8 text-error">
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="w-8 h-8 text-error"
+                            >
                               <Icon name="Trash2" size={14} />
                             </Button>
                           </div>
@@ -376,31 +454,37 @@ const Calendar = () => {
 // Event Modal Component
 const EventModal = ({ isOpen, onClose, onSave }) => {
   const [formData, setFormData] = useState({
-    title: '',
-    date: '',
-    time: '',
-    type: 'meeting',
-    description: '',
-    portfolio: '',
-    attendees: ''
+    title: "",
+    date: "",
+    time: "",
+    type: "meeting",
+    description: "",
+    portfolio: "",
+    attendees: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onSave(formData);
     setFormData({
-      title: '',
-      date: '',
-      time: '',
-      type: 'meeting',
-      description: '',
-      portfolio: '',
-      attendees: ''
+      title: "",
+      date: "",
+      time: "",
+      type: "meeting",
+      description: "",
+      portfolio: "",
+      attendees: "",
     });
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Add New Event" size="lg" className='bg-white text-black'>
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      title="Add New Event"
+      size="lg"
+      className="bg-white text-black"
+    >
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -410,7 +494,9 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             <Input
               type="text"
               value={formData.title}
-              onChange={(e) => setFormData(prev => ({...prev, title: e.target.value}))}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, title: e.target.value }))
+              }
               placeholder="Enter event title"
               required
             />
@@ -422,13 +508,15 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             </label>
             <Select
               value={formData.type}
-              onChange={(value) => setFormData(prev => ({...prev, type: value}))}
+              onChange={(value) =>
+                setFormData((prev) => ({ ...prev, type: value }))
+              }
               options={[
-                { value: 'meeting', label: 'Meeting' },
-                { value: 'client', label: 'Client Meeting' },
-                { value: 'earnings', label: 'Earnings Release' },
-                { value: 'economic', label: 'Economic Event' },
-                { value: 'deadline', label: 'Deadline' }
+                { value: "meeting", label: "Meeting" },
+                { value: "client", label: "Client Meeting" },
+                { value: "earnings", label: "Earnings Release" },
+                { value: "economic", label: "Economic Event" },
+                { value: "deadline", label: "Deadline" },
               ]}
               required
             />
@@ -441,7 +529,9 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             <Input
               type="date"
               value={formData.date}
-              onChange={(e) => setFormData(prev => ({...prev, date: e.target.value}))}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, date: e.target.value }))
+              }
               required
             />
           </div>
@@ -453,7 +543,9 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             <Input
               type="time"
               value={formData.time}
-              onChange={(e) => setFormData(prev => ({...prev, time: e.target.value}))}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, time: e.target.value }))
+              }
               required
             />
           </div>
@@ -464,14 +556,16 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             </label>
             <Select
               value={formData.portfolio}
-              onChange={(value) => setFormData(prev => ({...prev, portfolio: value}))}
+              onChange={(value) =>
+                setFormData((prev) => ({ ...prev, portfolio: value }))
+              }
               options={[
-                { value: '', label: 'Select Portfolio' },
-                { value: 'Growth Portfolio A', label: 'Growth Portfolio A' },
-                { value: 'Conservative Fund B', label: 'Conservative Fund B' },
-                { value: 'Balanced Strategy C', label: 'Balanced Strategy C' },
-                { value: 'Tech Innovation D', label: 'Tech Innovation D' },
-                { value: 'All Portfolios', label: 'All Portfolios' }
+                { value: "", label: "Select Portfolio" },
+                { value: "Growth Portfolio A", label: "Growth Portfolio A" },
+                { value: "Conservative Fund B", label: "Conservative Fund B" },
+                { value: "Balanced Strategy C", label: "Balanced Strategy C" },
+                { value: "Tech Innovation D", label: "Tech Innovation D" },
+                { value: "All Portfolios", label: "All Portfolios" },
               ]}
             />
           </div>
@@ -483,7 +577,9 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             <Input
               type="text"
               value={formData.attendees}
-              onChange={(e) => setFormData(prev => ({...prev, attendees: e.target.value}))}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, attendees: e.target.value }))
+              }
               placeholder="Comma-separated names"
             />
           </div>
@@ -497,7 +593,9 @@ const EventModal = ({ isOpen, onClose, onSave }) => {
             className="w-full p-3 border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
             rows="3"
             value={formData.description}
-            onChange={(e) => setFormData(prev => ({...prev, description: e.target.value}))}
+            onChange={(e) =>
+              setFormData((prev) => ({ ...prev, description: e.target.value }))
+            }
             placeholder="Event description or notes"
           />
         </div>
