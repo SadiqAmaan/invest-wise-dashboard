@@ -70,7 +70,7 @@ const LoginForm = () => {
 
       if (!credentials || credentials.password !== formData.password) {
         setErrors({
-          general: `Invalid credentials. Try: admin@investWise.com / Admin@123`,
+          general: "Invalid credentials. Please check your email and password.",
         });
         setIsLoading(false);
         return;
