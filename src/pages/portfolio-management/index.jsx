@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import Header from '../../components/ui/Header';
-import Breadcrumb from '../../components/ui/Breadcrumb';
-import PortfolioList from './components/PortfolioList';
-import PortfolioHeader from './components/PortfolioHeader';
-import HoldingsTable from './components/HoldingsTable';
-import PortfolioSummary from './components/PortfolioSummary';
-import CreatePortfolioModal from './components/CreatePortfolioModal';
-import EditPositionModal from './components/EditPositionModal';
-import portfoliosData from './components/portfolios.json';
-import holdingsData from './components/holdings.json';
+import React, { useState } from "react";
+import Header from "../../components/ui/Header";
+import Breadcrumb from "../../components/ui/Breadcrumb";
+import PortfolioList from "./components/PortfolioList";
+import PortfolioHeader from "./components/PortfolioHeader";
+import HoldingsTable from "./components/HoldingsTable";
+import PortfolioSummary from "./components/PortfolioSummary";
+import CreatePortfolioModal from "./components/CreatePortfolioModal";
+import EditPositionModal from "./components/EditPositionModal";
+import portfoliosData from "./components/portfolios.json";
+import holdingsData from "./components/holdings.json";
 
 const PortfolioManagement = () => {
   const [selectedPortfolio, setSelectedPortfolio] = useState(null);
@@ -24,7 +24,7 @@ const PortfolioManagement = () => {
   };
 
   const handleCreatePortfolio = (portfolioData) => {
-    setPortfolios(prev => [...prev, portfolioData]);
+    setPortfolios((prev) => [...prev, portfolioData]);
   };
 
   const handleEditPosition = (position) => {
@@ -40,7 +40,9 @@ const PortfolioManagement = () => {
   const handleSavePosition = (positionData) => {
     if (editingPosition) {
       // Update existing position
-      setHoldings(prev => prev.map(h => h.id === positionData.id ? positionData : h));
+      setHoldings((prev) =>
+        prev.map((h) => (h.id === positionData.id ? positionData : h))
+      );
     } else {
       // Add new position
       const newPosition = {
@@ -49,33 +51,35 @@ const PortfolioManagement = () => {
         unrealizedGainLoss: "₹0",
         unrealizedGainLossPercent: "0.0%",
         dayChange: "₹0",
-        dayChangePercent: "0.0%"
+        dayChangePercent: "0.0%",
       };
-      setHoldings(prev => [...prev, newPosition]);
+      setHoldings((prev) => [...prev, newPosition]);
     }
   };
 
   const handleDeletePositions = (positionIds) => {
-    setHoldings(prev => prev.filter(h => !positionIds.includes(h.id)));
+    setHoldings((prev) => prev.filter((h) => !positionIds.includes(h.id)));
   };
 
   const handleImportCSV = (file) => {
     // Mock CSV import functionality
-    console.log('Importing CSV file:', file.name);
+    console.log("Importing CSV file:", file.name);
     // In a real application, you would parse the CSV and add positions
   };
 
   const handleQuickAction = (actionId) => {
     switch (actionId) {
-      case 'rebalance': console.log('Rebalancing portfolio...');
+      case "rebalance":
+        console.log("Rebalancing portfolio...");
         break;
-      case 'add-position':
+      case "add-position":
         handleAddPosition();
         break;
-      case 'generate-report': console.log('Generating report...');
+      case "generate-report":
+        console.log("Generating report...");
         break;
-      case 'export-data':
-        console.log('Exporting data...');
+      case "export-data":
+        console.log("Exporting data...");
         break;
       default:
         break;
@@ -83,23 +87,23 @@ const PortfolioManagement = () => {
   };
 
   const handlePortfolioEdit = () => {
-    console.log('Editing portfolio:', selectedPortfolio?.name);
+    console.log("Editing portfolio:", selectedPortfolio?.name);
   };
 
   const handlePortfolioRebalance = () => {
-    console.log('Rebalancing portfolio:', selectedPortfolio?.name);
+    console.log("Rebalancing portfolio:", selectedPortfolio?.name);
   };
 
   const handlePortfolioExport = () => {
-    console.log('Exporting portfolio:', selectedPortfolio?.name);
+    console.log("Exporting portfolio:", selectedPortfolio?.name);
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen">
       <main className="pt-16">
         <div className="container-dashboard py-6">
           <Breadcrumb />
-          
+
           <div className="grid grid-cols-12 gap-6 min-h-[calc(100vh-200px)]">
             {/* Left Panel - Portfolio List */}
             <div className="col-span-12 lg:col-span-3">
