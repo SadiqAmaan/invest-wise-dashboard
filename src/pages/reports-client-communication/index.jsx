@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
-import Header from '../../components/ui/Header';
-import Breadcrumb from '../../components/ui/Breadcrumb';
-import Icon from '../../components/AppIcon';
-import Button from '../../components/ui/Button';
-import Input from '../../components/ui/Input';
-import Select from '../../components/ui/Select';
-import ReportTemplateCard from './components/ReportTemplateCard';
-import ScheduledReportItem from './components/ScheduledReportItem';
-import ReportBuilder from './components/ReportBuilder';
-import EmailComposer from './components/EmailComposer';
-import ReportLibrary from './components/ReportLibrary';
-import ActivityFeed from './components/ActivityFeed';
-import DistributionList from './components/DistributionList';
-import reportTemplates from './components/reportTemplates.json';
-import scheduledReports from './scheduledReports.json';
-import generatedReports from './generatedReports.json';
-import recentActivities from './recentActivities.json';
-import categoryOptions from './categoryOptions.json';
-import reportTabs from './reportTabs.json';
-import distributionLists from './distributionLists.json';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import Header from "../../components/ui/Header";
+import Breadcrumb from "../../components/ui/Breadcrumb";
+import Icon from "../../components/AppIcon";
+import Button from "../../components/ui/Button";
+import Input from "../../components/ui/Input";
+import Select from "../../components/ui/Select";
+import ReportTemplateCard from "./components/ReportTemplateCard";
+import ScheduledReportItem from "./components/ScheduledReportItem";
+import ReportBuilder from "./components/ReportBuilder";
+import EmailComposer from "./components/EmailComposer";
+import ReportLibrary from "./components/ReportLibrary";
+import ActivityFeed from "./components/ActivityFeed";
+import DistributionList from "./components/DistributionList";
+import reportTemplates from "./components/reportTemplates.json";
+import scheduledReports from "./scheduledReports.json";
+import generatedReports from "./generatedReports.json";
+import recentActivities from "./recentActivities.json";
+import categoryOptions from "./categoryOptions.json";
+import reportTabs from "./reportTabs.json";
+import distributionLists from "./distributionLists.json";
 
 const ReportsClientCommunication = () => {
   const [activeTab, setActiveTab] = useState("templates");
@@ -114,7 +114,7 @@ const ReportsClientCommunication = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen">
         <main className="pt-16">
           <div className="container-dashboard py-8">
             <Breadcrumb />
