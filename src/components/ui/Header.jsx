@@ -1,18 +1,19 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import Icon from '../AppIcon';
-import Button from './Button';
-import navigationItemsData from './navigationItems.json';
-import portfoliosData from './portfolios.json';
-import notificationsData from './notifications.json';
+import React, { useState, useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Icon from "../AppIcon";
+import Button from "./Button";
+import navigationItemsData from "./navigationItems.json";
+import portfoliosData from "./portfolios.json";
+import notificationsData from "./notifications.json";
 
 const Header = () => {
   const location = useLocation();
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
-  const [selectedPortfolio, setSelectedPortfolio] = useState('Growth Portfolio A');
-  
+  const [selectedPortfolio, setSelectedPortfolio] =
+    useState("Growth Portfolio A");
+
   const notificationRef = useRef(null);
   const profileRef = useRef(null);
   const portfolioRef = useRef(null);
@@ -23,23 +24,29 @@ const Header = () => {
 
   const notifications = notificationsData;
 
-  const unreadCount = notifications.filter(n => n.unread).length;
+  const unreadCount = notifications.filter((n) => n.unread).length;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (notificationRef.current && !notificationRef.current.contains(event.target)) {
+      if (
+        notificationRef.current &&
+        !notificationRef.current.contains(event.target)
+      ) {
         setIsNotificationOpen(false);
       }
       if (profileRef.current && !profileRef.current.contains(event.target)) {
         setIsProfileOpen(false);
       }
-      if (portfolioRef.current && !portfolioRef.current.contains(event.target)) {
+      if (
+        portfolioRef.current &&
+        !portfolioRef.current.contains(event.target)
+      ) {
         setIsPortfolioOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const handlePortfolioSelect = (portfolio) => {
@@ -49,29 +56,37 @@ const Header = () => {
 
   const getNotificationIcon = (type) => {
     switch (type) {
-      case 'alert': return 'AlertTriangle';
-      case 'success': return 'CheckCircle';
-      case 'warning': return 'AlertCircle';
-      default: return 'Info';
+      case "alert":
+        return "AlertTriangle";
+      case "success":
+        return "CheckCircle";
+      case "warning":
+        return "AlertCircle";
+      default:
+        return "Info";
     }
   };
 
   const getNotificationColor = (type) => {
     switch (type) {
-      case 'alert': return 'text-error';
-      case 'success': return 'text-success';
-      case 'warning': return 'text-warning';
-      default: return 'text-primary';
+      case "alert":
+        return "text-error";
+      case "success":
+        return "text-success";
+      case "warning":
+        return "text-warning";
+      default:
+        return "text-primary";
     }
   };
 
-  if (location.pathname === '/login') {
+  if (location.pathname === "/login") {
     return null;
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-card  border-border z-1000 bg-white text-black">
-      <div className="flex items-center justify-between h-16 px-6">
+    <header className="fixed top-0 left-0 right-0 bg-card  border-border z-1000">
+      <div className="flex items-center justify-between h-16 px-6 bg-black text-white">
         {/* Logo and Brand */}
         <div className="flex items-center">
           <Link to="/dashboard" className="flex items-center space-x-3">
@@ -79,7 +94,9 @@ const Header = () => {
               <Icon name="TrendingUp" size={20} color="white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-semibold text-foreground">Invest Wise</span>
+              <span className="text-lg font-semibold text-foreground">
+                Invest Wise
+              </span>
             </div>
           </Link>
         </div>
@@ -92,7 +109,7 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-item ${isActive ? 'active' : ''}`}
+                className={`nav-item ${isActive ? "active" : ""}`}
                 title={item.label}
               >
                 <Icon name={item.icon} size={16} className="mr-2" />
@@ -119,7 +136,9 @@ const Header = () => {
             {isPortfolioOpen && (
               <div className="absolute right-0 top-full mt-2 w-80 bg-popover border border-border rounded-lg shadow-elevated z-1010 bg-white text-black">
                 <div className="p-3 border-b border-border">
-                  <h3 className="font-medium text-sm text-foreground">Select Portfolio</h3>
+                  <h3 className="font-medium text-sm text-foreground">
+                    Select Portfolio
+                  </h3>
                 </div>
                 <div className="max-h-64 overflow-y-auto">
                   {portfolios.map((portfolio) => (
@@ -130,10 +149,20 @@ const Header = () => {
                     >
                       <div className="flex justify-between items-start">
                         <div>
-                          <div className="font-medium text-sm text-foreground">{portfolio.name}</div>
-                          <div className="text-xs text-muted-foreground mt-1">AUM: {portfolio.value}</div>
+                          <div className="font-medium text-sm text-foreground">
+                            {portfolio.name}
+                          </div>
+                          <div className="text-xs text-muted-foreground mt-1">
+                            AUM: {portfolio.value}
+                          </div>
                         </div>
-                        <div className={`text-xs font-medium ${portfolio.performance.startsWith('+') ? 'text-success' : 'text-error'}`}>
+                        <div
+                          className={`text-xs font-medium ${
+                            portfolio.performance.startsWith("+")
+                              ? "text-success"
+                              : "text-error"
+                          }`}
+                        >
                           {portfolio.performance}
                         </div>
                       </div>
@@ -164,7 +193,9 @@ const Header = () => {
               <div className="absolute right-0 top-full mt-2 w-96 bg-popover border border-border rounded-lg shadow-elevated z-1015 bg-white text-black">
                 <div className="p-4 border-b border-border">
                   <div className="flex justify-between items-center">
-                    <h3 className="font-medium text-foreground">Notifications</h3>
+                    <h3 className="font-medium text-foreground">
+                      Notifications
+                    </h3>
                     <Button variant="ghost" size="sm" className="text-xs">
                       Mark all read
                     </Button>
@@ -174,23 +205,33 @@ const Header = () => {
                   {notifications.map((notification) => (
                     <div
                       key={notification.id}
-                      className={`p-4 border-b border-border last:border-b-0 hover:bg-muted/30 transition-colors ${notification.unread ? 'bg-primary/5' : ''}`}
+                      className={`p-4 border-b border-border last:border-b-0 hover:bg-muted/30 transition-colors ${
+                        notification.unread ? "bg-primary/5" : ""
+                      }`}
                     >
                       <div className="flex items-start space-x-3">
-                        <Icon 
-                          name={getNotificationIcon(notification.type)} 
-                          size={16} 
-                          className={`mt-0.5 ${getNotificationColor(notification.type)}`}
+                        <Icon
+                          name={getNotificationIcon(notification.type)}
+                          size={16}
+                          className={`mt-0.5 ${getNotificationColor(
+                            notification.type
+                          )}`}
                         />
                         <div className="flex-1 min-w-0">
                           <div className="flex justify-between items-start">
-                            <p className="font-medium text-sm text-foreground">{notification.title}</p>
+                            <p className="font-medium text-sm text-foreground">
+                              {notification.title}
+                            </p>
                             {notification.unread && (
                               <div className="w-2 h-2 bg-primary rounded-full ml-2 mt-1"></div>
                             )}
                           </div>
-                          <p className="text-sm text-muted-foreground mt-1">{notification.message}</p>
-                          <p className="text-xs text-muted-foreground mt-2">{notification.time}</p>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            {notification.message}
+                          </p>
+                          <p className="text-xs text-muted-foreground mt-2">
+                            {notification.time}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -213,11 +254,17 @@ const Header = () => {
               className="flex items-center space-x-2"
             >
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-sm font-medium text-primary-foreground">HM</span>
+                <span className="text-sm font-medium text-primary-foreground">
+                  HM
+                </span>
               </div>
               <div className="hidden md:block text-left">
-                <div className="text-sm font-medium text-foreground">Harshad Mehta</div>
-                <div className="text-xs text-muted-foreground">Senior Portfolio Manager</div>
+                <div className="text-sm font-medium text-foreground">
+                  Harshad Mehta
+                </div>
+                <div className="text-xs text-muted-foreground">
+                  Senior Portfolio Manager
+                </div>
               </div>
               <Icon name="ChevronDown" size={14} />
             </Button>
@@ -225,9 +272,15 @@ const Header = () => {
             {isProfileOpen && (
               <div className="absolute right-0 top-full mt-2 w-56 bg-popover border border-border rounded-lg shadow-elevated z-1010 bg-white text-black">
                 <div className="p-3 border-b border-border">
-                  <div className="font-medium text-sm text-foreground">Harshad Mehta</div>
-                  <div className="text-xs text-muted-foreground">harshad.mehta@investwise.in</div>
-                  <div className="text-xs text-muted-foreground">Senior Portfolio Manager</div>
+                  <div className="font-medium text-sm text-foreground">
+                    Harshad Mehta
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    harshad.mehta@investwise.in
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    Senior Portfolio Manager
+                  </div>
                 </div>
                 <div className="py-2">
                   <Link
@@ -270,11 +323,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="xl:hidden"
-          >
+          <Button variant="ghost" size="icon" className="xl:hidden">
             <Icon name="Menu" size={20} />
           </Button>
         </div>
