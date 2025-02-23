@@ -16,6 +16,7 @@ import portfolioSummaryData from "./portfolioSummaryData.json";
 const Dashboard = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [marketStatus, setMarketStatus] = useState("open");
+  const theme = localStorage.getItem("theme")
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -68,7 +69,7 @@ const Dashboard = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen">
+      <div className={`min-h-screen ${theme === "dark" ? "bg-black text-white" : ""}`}>
         <main className="pt-16">
           <div className="container-dashboard py-8">
             <Breadcrumb />

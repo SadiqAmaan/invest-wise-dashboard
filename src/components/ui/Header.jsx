@@ -13,6 +13,8 @@ const Header = () => {
   const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
   const [selectedPortfolio, setSelectedPortfolio] =
     useState("Growth Portfolio A");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isThemeLoading, setIsThemeLoading] = useState(false);
 
   const notificationRef = useRef(null);
   const profileRef = useRef(null);
@@ -46,12 +48,24 @@ const Header = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
+    localStorage.setItem("theme", "light");
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const handlePortfolioSelect = (portfolio) => {
     setSelectedPortfolio(portfolio.name);
     setIsPortfolioOpen(false);
+  };
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+    setIsThemeLoading(true);
+    localStorage.setItem("theme", newDarkMode ? "dark" : "light");
+
+    setTimeout(() => {
+      setIsThemeLoading(false);
+    }, 1000);
   };
 
   const getNotificationIcon = (type) => {
@@ -85,8 +99,20 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-card  border-border z-1000">
-      <div className="flex items-center justify-between h-16 px-6 bg-black text-white">
+    <>
+      {isThemeLoading && (
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-[9999] flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-4">
+            <Icon name="Loader2" size={48} className="animate-spin text-primary" />
+            <p className="text-lg font-medium text-foreground">
+              Switching theme...
+            </p>
+          </div>
+        </div>
+      )}
+
+      <header className="fixed top-0 left-0 right-0 bg-card  border-border z-1000">
+        <div className={`flex items-center justify-between h-16 px-6 ${isDarkMode ? "bg-white text-black" : "bg-black text-white"}`}>
         {/* Logo and Brand */}
         <div className="flex items-center">
           <Link to="/dashboard" className="flex items-center space-x-3">
@@ -121,6 +147,21 @@ const Header = () => {
 
         {/* Right Section */}
         <div className="flex items-center space-x-4">
+          {/* Dark/Light Mode Toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleDarkMode}
+            disabled={isThemeLoading}
+            title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          >
+            {isThemeLoading ? (
+              <Icon name="Loader2" size={18} className="animate-spin" />
+            ) : (
+              <Icon name={isDarkMode ? "Sun" : "Moon"} size={18} />
+            )}
+          </Button>
+
           {/* Portfolio Selector */}
           <div className="relative" ref={portfolioRef}>
             <Button
@@ -329,6 +370,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 
